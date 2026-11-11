@@ -1,24 +1,24 @@
-2026-11-11 08:23:05 - [I] - 🚀 步骤 1: 加载配置
-2026-11-11 08:23:05 - [W] - ⚠️ 环境变量 'PUSHDEER_SENDKEY' 未设置。
-2026-11-11 08:23:05 - [W] - ⚠️ 环境变量 'SERVERCHAN_SENDKEY' 未设置。
-2026-11-11 08:23:05 - [I] - ✅ 使用指定的兑换计划: plan200
-2026-11-11 08:23:05 - [I] - ℹ️ 共加载了 1 个账号用于签到。
-2026-11-11 08:23:05 - [I] - ℹ️ 🍪[1:lihaoggb] 🌐[glados.space] UA=自定义
-2026-11-11 08:23:05 - [I] - ℹ️ 当前 PUSHDEER_SENDKEY 未设置，SERVERCHAN_SENDKEY 未设置。
-2026-11-11 08:23:05 - [I] - ℹ️ 当前 GLADOS_EXCHANGE_PLAN: plan200。
-2026-11-11 08:23:05 - [I] - ℹ️ 当前 GLADOS_VERBOSE: False。
-2026-11-11 08:23:05 - [I] - 🚀 步骤 2: 执行签到
-2026-11-11 08:23:05 - [I] - ℹ️ 共 1 个账号，候选域名 8 个（glados.cloud、railgun.info、glados.network、glados.rocks、glados.one、glados.space、glados.vip、glados-facility.com）
-2026-11-11 08:23:05 - [I] - 🚀 ========== 处理账号 1/1：1:lihaoggb ==========
-2026-11-11 08:23:06 - [I] - 🍪[1:lihaoggb] 🌐[glados.space] ✅ 命中登录域名（剩余 44 天）
-2026-11-11 08:23:09 - [I] - 🍪[1:lihaoggb] 🌐[glados.space] 🔄 { code : 1, repeated : True, message : Today's observation logged. Return tomorrow for more points. }
-2026-11-11 08:23:09 - [W] - 🍪[1:lihaoggb] 🌐[glados.space] ❌ { code : 1, message : Not enough points. Need 200, have 25.0000000000000000 }
-2026-11-11 08:23:09 - [I] - 🍪[1:lihaoggb] 🌐[glados.space] 🔄 结果: 重复签到
-2026-11-11 08:23:09 - [I] - 🚀 步骤 3: 生成报告
-2026-11-11 08:23:09 - [I] - 
+2026-11-11 15:46:37 - [I] - 🚀 步骤 1: 加载配置
+2026-11-11 15:46:37 - [W] - ⚠️ 环境变量 'PUSHDEER_SENDKEY' 未设置。
+2026-11-11 15:46:37 - [W] - ⚠️ 环境变量 'SERVERCHAN_SENDKEY' 未设置。
+2026-11-11 15:46:37 - [I] - ✅ 使用指定的兑换计划: plan200
+2026-11-11 15:46:37 - [I] - ℹ️ 共加载了 1 个账号用于签到。
+2026-11-11 15:46:37 - [I] - ℹ️ 🍪[1:lihaoggb] 🌐[glados.space] UA=自定义
+2026-11-11 15:46:37 - [I] - ℹ️ 当前 PUSHDEER_SENDKEY 未设置，SERVERCHAN_SENDKEY 未设置。
+2026-11-11 15:46:37 - [I] - ℹ️ 当前 GLADOS_EXCHANGE_PLAN: plan200。
+2026-11-11 15:46:37 - [I] - ℹ️ 当前 GLADOS_VERBOSE: False。
+2026-11-11 15:46:37 - [I] - 🚀 步骤 2: 执行签到
+2026-11-11 15:46:37 - [I] - ℹ️ 共 1 个账号，候选域名 8 个（glados.cloud、railgun.info、glados.network、glados.rocks、glados.one、glados.space、glados.vip、glados-facility.com）
+2026-11-11 15:46:37 - [I] - 🚀 ========== 处理账号 1/1：1:lihaoggb ==========
+2026-11-11 15:46:37 - [I] - 🍪[1:lihaoggb] 🌐[glados.space] ✅ 命中登录域名（剩余 43 天）
+2026-11-11 15:46:40 - [I] - 🍪[1:lihaoggb] 🌐[glados.space] 🔄 { code : 1, repeated : True, message : Today's observation logged. Return tomorrow for more points. }
+2026-11-11 15:46:41 - [W] - 🍪[1:lihaoggb] 🌐[glados.space] ❌ { code : 1, message : Not enough points. Need 200, have 25.0000000000000000 }
+2026-11-11 15:46:41 - [I] - 🍪[1:lihaoggb] 🌐[glados.space] 🔄 结果: 重复签到
+2026-11-11 15:46:41 - [I] - 🚀 步骤 3: 生成报告
+2026-11-11 15:46:41 - [I] - 
 🏁 ========== 签到总结 ==========
 GLaDOS 签到 · 成功 0 · 失败 0 · 重复 1
-#1  🔄 重复签到  glados.space  获得 0 积分 · 剩余 44 天 · 总 25 积分 · 兑换失败: Not enough points. Need 200, have 25.0000000000000000
-2026-11-11 08:23:09 - [I] - 🚀 步骤 4: 发送推送
-2026-11-11 08:23:09 - [W] - ⚠️ 未配置推送密钥，跳过。
-2026-11-11 08:23:09 - [I] - 🏁 签到完成
+#1  🔄 重复签到  glados.space  获得 0 积分 · 剩余 43 天 · 总 25 积分 · 兑换失败: Not enough points. Need 200, have 25.0000000000000000
+2026-11-11 15:46:41 - [I] - 🚀 步骤 4: 发送推送
+2026-11-11 15:46:41 - [W] - ⚠️ 未配置推送密钥，跳过。
+2026-11-11 15:46:41 - [I] - 🏁 签到完成
