@@ -7,6 +7,7 @@ on:
     paths-ignore:
       - 'README.md'
       - 'imgs/**'
+      - 'log.log'
   schedule:
     - cron: '18 9,12 * * *'
       timezone: 'Asia/Shanghai'
@@ -25,7 +26,7 @@ jobs:
     timeout-minutes: 15
 
     permissions:
-      contents: read
+      contents: write
       actions: write
 
     strategy:
@@ -39,6 +40,9 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v6
+      with:
+        # 排队运行时取分支最新状态，包含前一轮提交的日志
+        ref: ${{ github.ref }}
 
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v6
@@ -53,14 +57,52 @@ jobs:
 
     # 执行 签到脚本
     - name: Running checkin
+      id: checkin
+      shell: bash
       run: |
-        python checkin.py
+        python -u checkin.py 2>&1 | tee log.log
       env:
         PUSHDEER_SENDKEY: ${{ secrets.PUSHDEER_SENDKEY }}
         SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
         GLADOS_COOKIES: ${{ secrets.GLADOS_COOKIES }}
         GLADOS_EXCHANGE_PLAN: ${{ secrets.GLADOS_EXCHANGE_PLAN }}
         GLADOS_VERBOSE: ${{ secrets.GLADOS_VERBOSE }}
+
+    # 即使签到失败，也提交本次日志；取消运行或非分支引用时不推送
+    - name: Commit checkin log
+      if: ${{ !cancelled() && steps.checkin.outcome != 'skipped' && github.ref_type == 'branch' }}
+      shell: bash
+      run: |
+        if [ ! -f log.log ]; then
+          exit 0
+        fi
+        # Actions 的控制台掩码不会写入文件，提交前再次脱敏
+        python - <<'PY'
+        import os
+        from pathlib import Path
+        from logging_config import redact
+
+        path = Path("log.log")
+        text = redact(path.read_text(encoding="utf-8"))
+        for name in ("GLADOS_COOKIES", "PUSHDEER_SENDKEY", "SERVERCHAN_SENDKEY"):
+            value = (os.environ.get(name) or "").strip()
+            if value:
+                text = text.replace(value, "[REDACTED]")
+        path.write_text(text, encoding="utf-8")
+        PY
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add -- log.log
+        if git diff --cached --quiet -- log.log; then
+          exit 0
+        fi
+        git commit -m "chore: update check-in log [skip ci]"
+        git pull --rebase origin "$GITHUB_REF_NAME"
+        git push origin "HEAD:$GITHUB_REF_NAME"
+      env:
+        GLADOS_COOKIES: ${{ secrets.GLADOS_COOKIES }}
+        PUSHDEER_SENDKEY: ${{ secrets.PUSHDEER_SENDKEY }}
+        SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
 
     # 签到失败（配置错误会 exit 1）时也要保活，否则恰好错过最需要提醒的那次
     - name: Keep alive
