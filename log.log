@@ -1,23 +1,23 @@
-2026-11-13 16:01:57 - [I] - 🚀 步骤 1: 加载配置
-2026-11-13 16:01:57 - [W] - ⚠️ 环境变量 'PUSHDEER_SENDKEY' 未设置。
-2026-11-13 16:01:57 - [W] - ⚠️ 环境变量 'SERVERCHAN_SENDKEY' 未设置。
-2026-11-13 16:01:57 - [I] - ✅ 使用指定的兑换计划: plan500
-2026-11-13 16:01:57 - [I] - ℹ️ 共加载了 1 个账号用于签到。
-2026-11-13 16:01:57 - [I] - ℹ️ 🍪[1:lihaoggb] 🌐[glados.space] UA=自定义
-2026-11-13 16:01:57 - [I] - ℹ️ 当前 PUSHDEER_SENDKEY 未设置，SERVERCHAN_SENDKEY 未设置。
-2026-11-13 16:01:57 - [I] - ℹ️ 当前 GLADOS_EXCHANGE_PLAN: plan500。
-2026-11-13 16:01:57 - [I] - ℹ️ 当前 GLADOS_VERBOSE: False。
-2026-11-13 16:01:57 - [I] - 🚀 步骤 2: 执行签到
-2026-11-13 16:01:57 - [I] - ℹ️ 共 1 个账号，候选域名 8 个（glados.cloud、railgun.info、glados.network、glados.rocks、glados.one、glados.space、glados.vip、glados-facility.com）
-2026-11-13 16:01:57 - [I] - 🚀 ========== 处理账号 1/1：1:lihaoggb ==========
-2026-11-13 16:01:58 - [I] - 🍪[1:lihaoggb] 🌐[glados.space] ✅ 命中登录域名（剩余 41 天）
-2026-11-13 16:02:01 - [E] - 🍪[1:lihaoggb] 🌐[glados.space] 🔴 未预期响应(code=5, message=Cloudflare verification failed. Nothing was recorded — please retry.)，请检查 GLaDOS 服务状态或 Cookie
-2026-11-13 16:02:01 - [W] - 🍪[1:lihaoggb] 🌐[glados.space] ⚠️ 结果: 签到失败
-2026-11-13 16:02:01 - [I] - 🚀 步骤 3: 生成报告
-2026-11-13 16:02:01 - [I] - 
+2026-11-14 15:37:34 - [I] - 🚀 步骤 1: 加载配置
+2026-11-14 15:37:34 - [W] - ⚠️ 环境变量 'PUSHDEER_SENDKEY' 未设置。
+2026-11-14 15:37:34 - [W] - ⚠️ 环境变量 'SERVERCHAN_SENDKEY' 未设置。
+2026-11-14 15:37:34 - [I] - ✅ 使用指定的兑换计划: plan500
+2026-11-14 15:37:34 - [I] - ℹ️ 共加载了 1 个账号用于签到。
+2026-11-14 15:37:34 - [I] - ℹ️ 🍪[1:lihaoggb] 🌐[glados.space] UA=自定义
+2026-11-14 15:37:34 - [I] - ℹ️ 当前 PUSHDEER_SENDKEY 未设置，SERVERCHAN_SENDKEY 未设置。
+2026-11-14 15:37:34 - [I] - ℹ️ 当前 GLADOS_EXCHANGE_PLAN: plan500。
+2026-11-14 15:37:34 - [I] - ℹ️ 当前 GLADOS_VERBOSE: False。
+2026-11-14 15:37:34 - [I] - 🚀 步骤 2: 执行签到
+2026-11-14 15:37:34 - [I] - ℹ️ 共 1 个账号，候选域名 8 个（glados.cloud、railgun.info、glados.network、glados.rocks、glados.one、glados.space、glados.vip、glados-facility.com）
+2026-11-14 15:37:34 - [I] - 🚀 ========== 处理账号 1/1：1:lihaoggb ==========
+2026-11-14 15:37:34 - [I] - 🍪[1:lihaoggb] 🌐[glados.space] ✅ 命中登录域名（剩余 40 天）
+2026-11-14 15:37:37 - [E] - 🍪[1:lihaoggb] 🌐[glados.space] 🔴 未预期响应(code=5, message=Cloudflare verification failed. Nothing was recorded — please retry.)，请检查 GLaDOS 服务状态或 Cookie
+2026-11-14 15:37:37 - [W] - 🍪[1:lihaoggb] 🌐[glados.space] ⚠️ 结果: 签到失败
+2026-11-14 15:37:37 - [I] - 🚀 步骤 3: 生成报告
+2026-11-14 15:37:37 - [I] - 
 🏁 ========== 签到总结 ==========
 GLaDOS 签到 · 成功 0 · 失败 1 · 重复 0
-#1  🔴 签到失败  glados.space  获得 0 积分 · 剩余 41 天 · 总 27 积分
-2026-11-13 16:02:01 - [I] - 🚀 步骤 4: 发送推送
-2026-11-13 16:02:01 - [W] - ⚠️ 未配置推送密钥，跳过。
-2026-11-13 16:02:01 - [I] - 🏁 签到完成
+#1  🔴 签到失败  glados.space  获得 0 积分 · 剩余 40 天 · 总 27 积分
+2026-11-14 15:37:37 - [I] - 🚀 步骤 4: 发送推送
+2026-11-14 15:37:37 - [W] - ⚠️ 未配置推送密钥，跳过。
+2026-11-14 15:37:37 - [I] - 🏁 签到完成
